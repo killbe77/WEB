@@ -4,30 +4,48 @@
 <title>WEB - HTML - 1</title>
 <meta charset="utf-8">
 <style>
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#article{
+  padding-left: 28px;
+}
+body{
+  margin: 0px;
+}
  a {
    color: black;
    text-decoration: none;
  }
- .saw{
-   color : gray;
- }
- #active{
-   color: red;
- }
+
  h1{
-   font-size: 40px;
+   font-size: 45px;
    text-align: center;
+   border-bottom: 1px solid gray;
+   margin: 0px;
+   padding: 20px;
+ }
+ ol{
+   border-right: 1px solid gray;
+   width: 100px;
+   margin: 0px;
+   padding: 28px;
+ }
+ #grid ol{
+   padding-left: 40px;
  }
 </style>
 </head>
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="1.html" class="saw"id=" active">HTML</a></li>
-  <li><a href="2.html" class="saw">CSS</a></li>
-  <li><a href="3.html" class="saw">JavaScript</a></li>
-</ol>
+  <div id= "grid">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+   </ol>
 
 <!--
 <ol>
@@ -36,9 +54,15 @@
   <li><a href="3.html"><font color="red">JavaScript</font></a></li>
 </ol>
 -->
-<h2>HTML</h2>
-<a href="https://www.w3.org/TR/2021/SPSD-html52-20210128/"target="_blank">Hypertext Markup Language (Html)</a>
-<p>HTML (Hypertext Markup Language</p>
+  <div id= "article">
+  <h2>HTML</h2>
+  <a href="https://www.w3.org/TR/2021/SPSD-html52-20210128/"target="_blank">Hypertext Markup Language (Html)</a>
+  <p>HTML (Hypertext Markup Language,하이퍼텍스트 마크업 언어)는 프로그래밍 언어는
+  아니고, 우리가 보는 웹페이지가 어떻게 구조화되어 있는지 브라우저로 하여금 알 수
+  있도록 하는 마크업 언어입니다. ... 참고: HTML 요소는 대소문자를 구분하지 않습니다.
+    </p>
+  </div>
+</div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE"
  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
